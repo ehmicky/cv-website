@@ -1,3 +1,3 @@
 #!/bin/bash
 
-scotty --source www.mickaelhebert.com --bucket www.mickaelhebert.com --update --website --region eu-west-1
+scotty --source www.mickael-hebert.com --bucket www.mickael-hebert.com --update --website --region eu-west-1
