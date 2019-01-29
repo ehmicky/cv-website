@@ -698,9 +698,9 @@ footer {
     float: left;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 0 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 25px;
     max-width: 380px;
     img {
       width: 100%;
@@ -723,6 +723,8 @@ footer {
 
     p {
         color: $text;
+        margin: 7px 0;
+        text-align: left;
     }
 }
 
@@ -955,6 +957,9 @@ footer {
         }
     }
 
+    #projects .container {
+      width: auto;
+    }
 }
 
 // Small Devices
@@ -1012,6 +1017,7 @@ footer {
 
     .project-image {
         float: none;
+        max-width: inherit;
     }
 
     .project-info {
@@ -1020,6 +1026,11 @@ footer {
         padding: 0px 15px 15px 15px;
         top: auto;
         transform: none;
+
+        p {
+          text-align: center;
+          margin: 14px 0;
+        }
     }
 
     footer {
