@@ -94,4 +94,13 @@
         });
     });
 
+    // Quick ugly hack to remove `Powered by embedly`
+    var style = document.createElement('style')
+    style.textContent = '.card .brd, .card .hdr { display: none }'
+    setTimeout(function() {
+      document.querySelectorAll('iframe.embedly-card').forEach(function (node) {
+        node.contentDocument.body.appendChild(style)
+      })
+    }, 1e3)
+
 })(jQuery);
