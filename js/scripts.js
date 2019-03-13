@@ -96,7 +96,7 @@
 
     // Quick ugly hack to remove `Powered by embedly`
     var style = document.createElement('style')
-    style.textContent = '.card .brd, .card .hdr { display: none }'
+    style.textContent = '.card .brd, .card .hdr { visibility: hidden }'
     setTimeout(function() {
       document.querySelectorAll('iframe.embedly-card').forEach(function (node) {
         node.contentDocument.body.appendChild(style)
