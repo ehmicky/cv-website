@@ -4,32 +4,45 @@ const { src, dest, watch, series, parallel } = require('gulp');
 const gulpUglify = require('gulp-uglify');
 const gulpSass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const del = require('del')
 
 const SRC_DIR = 'src'
 const BUILD_DIR = 'build'
-const JS_FILE = `${SRC_DIR}/js/scripts.js`
-const SASS_FILE = `${SRC_DIR}/scss/styles.scss`
+const JS_FILES = `${SRC_DIR}/**/*.js`
+const SASS_FILES = `${SRC_DIR}/**/*.scss`
+const OTHER_FILES = [
+  `${SRC_DIR}/{css,images,libs}/**`,
+  `${SRC_DIR}/favicon.ico`,
+  `${SRC_DIR}/index.html`,
+]
+
+const clean = async function() {
+  await del(BUILD_DIR)
+}
 
 const uglify = function() {
-    return src(JS_FILE)
-        .pipe(gulpUglify())
-        .pipe(dest(BUILD_DIR));
+  return src(JS_FILES)
+    .pipe(gulpUglify())
+    .pipe(dest(BUILD_DIR));
 };
 
 const sass = function () {
-    return src(SASS_FILE)
-        .pipe(gulpSass({ outputStyle: 'compressed' }).on('error', gulpSass.logError))
-        .pipe(dest(BUILD_DIR));
+  return src(SASS_FILES)
+    .pipe(gulpSass({ outputStyle: 'compressed' }).on('error', gulpSass.logError))
+    .pipe(dest(BUILD_DIR));
 };
 
-module.exports.build = series([uglify, sass])
-
-const watchJs = function(){
-  return watch(JS_FILE, uglify)
+const move = function() {
+  return src(OTHER_FILES).pipe(dest(BUILD_DIR))
 }
 
-const watchScss = function(){
-  return watch(SASS_FILE, sass)
+const build = series(clean, move, parallel([uglify, sass]))
+
+const watchTask = function(){
+  return watch(`${SRC_DIR}/**`, build)
 }
 
-module.exports.watch = parallel([watchJs, watchScss])
+module.exports = {
+  build,
+  watch: watchTask,
+}
