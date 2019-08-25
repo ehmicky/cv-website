@@ -1,6 +1,6 @@
 'use strict'
 
-const { src, dest, watch, parallel } = require('gulp');
+const { src, dest, watch, series, parallel } = require('gulp');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const wait = require('gulp-wait');
@@ -21,6 +21,8 @@ const styles = function () {
         .pipe(dest('./css'));
 };
 
+const build = series([scripts, styles])
+
 const watchJs = function(){
   return watch('js/*.js', scripts)
 }
@@ -32,5 +34,6 @@ const watchTask = parallel([watchJs, watchScss])
 module.exports = {
   scripts,
   styles,
+  build,
   watch: watchTask,
 }
