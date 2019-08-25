@@ -3,7 +3,6 @@
 const { src, dest, watch, series, parallel } = require('gulp');
 const gulpUglify = require('gulp-uglify');
 const gulpSass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
 const del = require('del')
 
 const SRC_DIR = 'src'
