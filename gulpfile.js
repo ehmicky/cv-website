@@ -10,7 +10,7 @@ const BUILD_DIR = 'build'
 const JS_FILES = `${SRC_DIR}/**/*.js`
 const SASS_FILES = `${SRC_DIR}/**/*.scss`
 const OTHER_FILES = [
-  `${SRC_DIR}/{css,images,libs,fonts}/**`,
+  `${SRC_DIR}/{images,libs,fonts}/**`,
   `${SRC_DIR}/favicon.ico`,
   `${SRC_DIR}/index.html`,
 ]
