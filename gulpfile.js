@@ -1,7 +1,5 @@
 'use strict'
 
-const { env } = require('process')
-
 const { src, dest, watch, series, parallel } = require('gulp')
 const gulpUglify = require('gulp-uglify')
 const gulpSass = require('gulp-sass')
@@ -18,7 +16,6 @@ const OTHER_FILES = [
 ]
 
 const clean = async function() {
-  console.log(JSON.stringify(env, null, 2))
   await del(BUILD_DIR)
 }
 
