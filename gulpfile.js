@@ -1,8 +1,8 @@
 'use strict'
 
-const { src, dest, watch, series, parallel } = require('gulp');
-const gulpUglify = require('gulp-uglify');
-const gulpSass = require('gulp-sass');
+const { src, dest, watch, series, parallel } = require('gulp')
+const gulpUglify = require('gulp-uglify')
+const gulpSass = require('gulp-sass')
 const del = require('del')
 
 const SRC_DIR = 'src'
@@ -22,14 +22,16 @@ const clean = async function() {
 const uglify = function() {
   return src(JS_FILES)
     .pipe(gulpUglify())
-    .pipe(dest(BUILD_DIR));
-};
+    .pipe(dest(BUILD_DIR))
+}
 
-const sass = function () {
+const sass = function() {
   return src(SASS_FILES)
-    .pipe(gulpSass({ outputStyle: 'compressed' }).on('error', gulpSass.logError))
-    .pipe(dest(BUILD_DIR));
-};
+    .pipe(
+      gulpSass({ outputStyle: 'compressed' }).on('error', gulpSass.logError),
+    )
+    .pipe(dest(BUILD_DIR))
+}
 
 const move = function() {
   return src(OTHER_FILES).pipe(dest(BUILD_DIR))
@@ -37,7 +39,7 @@ const move = function() {
 
 const build = series(clean, move, parallel([uglify, sass]))
 
-const watchTask = function(){
+const watchTask = function() {
   return watch(`${SRC_DIR}/**`, build)
 }
 
