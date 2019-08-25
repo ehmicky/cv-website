@@ -8,8 +8,7 @@ const del = require('del')
 const SRC_DIR = 'src'
 const BUILD_DIR = 'build'
 const JS_FILES = `${SRC_DIR}/**/*.js`
-const SASS_FILES = `${SRC_DIR}/scss/*.scss`
-const SASS_BUILD_DIR = `${BUILD_DIR}/css`
+const SASS_FILES = `${SRC_DIR}/**/*.scss`
 const OTHER_FILES = [
   `${SRC_DIR}/{css,images,libs,fonts}/**`,
   `${SRC_DIR}/favicon.ico`,
@@ -29,7 +28,7 @@ const uglify = function() {
 const sass = function () {
   return src(SASS_FILES)
     .pipe(gulpSass({ outputStyle: 'compressed' }).on('error', gulpSass.logError))
-    .pipe(dest(SASS_BUILD_DIR));
+    .pipe(dest(BUILD_DIR));
 };
 
 const move = function() {
