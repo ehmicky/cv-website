@@ -2,6 +2,8 @@
   publish = "build"
   command = "gulp build"
   functions = "functions"
+[build.environment]
+  NODE_VERSION = 'node'
 [build.processing.css]
   bundle = true
   minify = true
