@@ -1,7 +1,7 @@
 {
   "name": "ehmicky-cv-website",
   "version": "2.0.0",
-  "description": "",
+  "description": "CV of ehmicky",
   "license": "Apache-2.0",
   "dependencies": {},
   "devDependencies": {
