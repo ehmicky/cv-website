@@ -1,5 +1,5 @@
 [build]
   base = "/"
-  publish = "/"
+  publish = "build"
   command = "gulp build"
   functions = "functions/"

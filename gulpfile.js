@@ -1,39 +1,35 @@
 'use strict'
 
 const { src, dest, watch, series, parallel } = require('gulp');
-const uglify = require('gulp-uglify');
-const sass = require('gulp-sass');
-const wait = require('gulp-wait');
-const rename = require('gulp-rename');
+const gulpUglify = require('gulp-uglify');
+const gulpSass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 
-const scripts = function() {
-    return src('js/scripts.js')
-        .pipe(uglify({ output: { comments: '/^!/' } }))
-        .pipe(rename({extname: '.min.js'}))
-        .pipe(dest('js'));
+const SRC_DIR = 'src'
+const BUILD_DIR = 'build'
+const JS_FILE = `${SRC_DIR}/js/scripts.js`
+const SASS_FILE = `${SRC_DIR}/scss/styles.scss`
+
+const uglify = function() {
+    return src(JS_FILE)
+        .pipe(gulpUglify())
+        .pipe(dest(BUILD_DIR));
 };
 
-const styles = function () {
-    return src('./scss/styles.scss')
-        .pipe(wait(250))
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(dest('./css'));
+const sass = function () {
+    return src(SASS_FILE)
+        .pipe(gulpSass({ outputStyle: 'compressed' }).on('error', gulpSass.logError))
+        .pipe(dest(BUILD_DIR));
 };
 
-const build = series([scripts, styles])
+module.exports.build = series([uglify, sass])
 
 const watchJs = function(){
-  return watch('js/*.js', scripts)
+  return watch(JS_FILE, uglify)
 }
-const watchScss = function(){
-  return watch('scss/*.scss', styles)
-}
-const watchTask = parallel([watchJs, watchScss])
 
-module.exports = {
-  scripts,
-  styles,
-  build,
-  watch: watchTask,
+const watchScss = function(){
+  return watch(SASS_FILE, sass)
 }
+
+module.exports.watch = parallel([watchJs, watchScss])
