@@ -1,5 +1,7 @@
 import { version } from 'process'
+import { callbackify } from 'util'
 
-export const handler = function(event, context, callback) {
-  callback(null, { statusCode: 200, body: `Node.js ${version}` })
-}
+// eslint-disable-next-line require-await, no-unused-vars
+export const handler = callbackify(async function handle(event, context) {
+  return { statusCode: 200, body: `Node ${version}` }
+})
