@@ -16,6 +16,8 @@ const OTHER_FILES = [
 ]
 
 const clean = async function() {
+  // TODO: replace with `promisify(fs.rmdir)(..., {recursive: true})` after
+  // dropping support for Node <12
   await del(BUILD_DIR)
 }
 
