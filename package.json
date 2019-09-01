@@ -8,7 +8,7 @@
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
-    "gulp-shared-tasks": "^0.30.39",
+    "gulp-shared-tasks": "^0.30.40",
     "gulp-uglify": "^3.0.2",
     "netlify-lambda": "^1.6.3"
   }
