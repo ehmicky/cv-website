@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "dependencies": {},
   "devDependencies": {
-    "@ehmicky/dev-tasks": "^0.30.47",
+    "@ehmicky/dev-tasks": "^0.30.48",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
