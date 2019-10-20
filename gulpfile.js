@@ -8,7 +8,7 @@ const SRC_DIR = 'src'
 const BUILD_DIR = 'build'
 const JS_FILES = `${SRC_DIR}/**/*.js`
 const OTHER_FILES = [
-  `${SRC_DIR}/{images,libs,fonts}/**`,
+  `${SRC_DIR}/{css,images,libs,fonts}/**`,
   `${SRC_DIR}/favicon.ico`,
   `${SRC_DIR}/index.html`,
 ]
