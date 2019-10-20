@@ -4,8 +4,8 @@
   functions = "functions"
 [build.environment]
   AWS_LAMBDA_JS_RUNTIME = "nodejs10.x"
-  NODE_VERSION = "12"
   NETLIFY_BUILD_LIFECYCLE_TRIAL = "enabled=true"
+  NODE_VERSION = "12"
 [build.processing.css]
   bundle = true
   minify = true
