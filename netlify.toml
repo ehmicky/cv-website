@@ -4,8 +4,8 @@
   functions = "functions"
 [build.environment]
   AWS_LAMBDA_JS_RUNTIME = "nodejs10.x"
-  ZISI_VERSION = "0.4.0-3"
   NODE_VERSION = "12"
+  ZISI_VERSION = "0.4.0-3"
 [build.processing.css]
   bundle = true
   minify = true
