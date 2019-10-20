@@ -1,5 +1,7 @@
 build:
-  command: gulp buildd
+  command: gulp build
+  lifecycle:
+    build: gulp build
   publish: build
   functions: functions
   environment:
