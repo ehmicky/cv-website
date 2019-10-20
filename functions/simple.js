@@ -1,3 +1,3 @@
 module.exports.handler = async function(event, context) {
-  return { statusCode: 200, body: 'Deploy building' }
+  return { statusCode: 200, body: String(Date.now()) }
 }
