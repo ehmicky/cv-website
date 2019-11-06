@@ -1,5 +1,3 @@
-require('sqlite3')
-
 const { name } = require('../package.json')
 
 module.exports.handler = async function(event, context) {
