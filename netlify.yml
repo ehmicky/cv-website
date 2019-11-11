@@ -1,5 +1,4 @@
 build:
-  command: gulp build
   lifecycle:
     build: gulp build
   publish: build
