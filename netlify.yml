@@ -1,6 +1,8 @@
 build:
   lifecycle:
-    build: gulp build
+    build:
+    - gulp build
+    - env
   publish: build
   functions: functions
   environment:
