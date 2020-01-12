@@ -7,7 +7,7 @@
     "math-avg": "^1.0.0"
   },
   "devDependencies": {
-    "@ehmicky/dev-tasks": "^0.31.2",
+    "@ehmicky/dev-tasks": "^0.31.4",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-uglify": "^3.0.2"
