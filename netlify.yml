@@ -1,8 +1,10 @@
 build:
-  lifecycle:
-    onBuild: gulp build
-  publish: build
-  functions: functions
+  #lifecycle:
+  #  onBuild: gulp build
+  #publish: build
+  #functions: functions
+  base: src
+  command: pwd
   environment:
     AWS_LAMBDA_JS_RUNTIME: nodejs10.x
     NODE_VERSION: '12'
