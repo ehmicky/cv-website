@@ -1,6 +1,6 @@
 build:
   command: gulp build
-  #lifecycle:
+  # lifecycle:
   #  onBuild: gulp build
   publish: build
   functions: functions
