@@ -1,6 +1,7 @@
 build:
-  lifecycle:
-    onBuild: gulp build
+  command: gulp build
+  #lifecycle:
+  #  onBuild: gulp build
   publish: build
   functions: functions
   environment:
