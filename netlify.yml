@@ -17,5 +17,3 @@ build:
       pretty_urls: true
     images:
       compress: true
-plugins:
-  - package: ./plugin.js
