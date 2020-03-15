@@ -1,5 +1,4 @@
 build:
-  command: gulp build
   publish: build
   functions: functions
   environment:
