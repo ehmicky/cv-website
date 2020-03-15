@@ -17,3 +17,7 @@ build:
       pretty_urls: true
     images:
       compress: true
+context:
+  production:
+    lifecycle:
+      onBuild: gulp buildo
