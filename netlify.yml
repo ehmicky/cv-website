@@ -1,5 +1,5 @@
 build:
-  publish: gulp build
+  publish: build
   functions: functions
   environment:
     NODE_VERSION: '12'
@@ -16,5 +16,5 @@ build:
     images:
       compress: true
 context:
-  master:
-    publish: gulp buildo
+  production:
+    publish: gulp build
