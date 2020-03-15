@@ -1,8 +1,7 @@
 build:
   lifecycle:
-    onInit: pwd
     onBuild: gulp build
-  publish: buildDoesNotExist
+  publish: build
   functions: functions
   environment:
     NODE_VERSION: '12'
