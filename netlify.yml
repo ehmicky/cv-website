@@ -1,5 +1,4 @@
 build:
-  base: base
   lifecycle:
     onBuild: gulp build
   publish: build
