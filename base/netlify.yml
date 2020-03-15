@@ -2,8 +2,8 @@ build:
   base: baseAgain
   lifecycle:
     onBuild: gulp build
-  publish: ../build
-  functions: ../functions
+  publish: build
+  functions: functions
   environment:
     NODE_VERSION: '12'
     AWS_LAMBDA_JS_RUNTIME: nodejs10.x
