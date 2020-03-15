@@ -1,11 +1,13 @@
 build:
   lifecycle:
+    onInit: echo HELLO $HELLO HELLO
     onBuild: gulp build
   publish: build
   functions: functions
   environment:
     NODE_VERSION: '12'
     AWS_LAMBDA_JS_RUNTIME: nodejs10.x
+    HELLO: world
   processing:
     css:
       bundle: true
