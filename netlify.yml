@@ -1,4 +1,6 @@
 build:
+  lifecycle:
+    onInvalid: gulp build
   publish: build
   functions: functions
   environment:
