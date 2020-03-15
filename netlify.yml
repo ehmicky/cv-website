@@ -17,5 +17,5 @@ build:
       pretty_urls: true
     images:
       compress: true
-packages:
+plugins:
   - type: test
