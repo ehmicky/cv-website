@@ -1,5 +1,7 @@
 build:
+  base: base
   lifecycle:
+    onInit: pwd
     onBuild: gulp build
   publish: build
   functions: functions
