@@ -1,5 +1,4 @@
 build:
-  base: basea
   lifecycle:
     onBuild: gulp build
   publish: build
