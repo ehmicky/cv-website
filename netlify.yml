@@ -1,6 +1,6 @@
 build:
   lifecycle:
-    onInvalid: echo HELLO $HELLO HELLO
+    onInit: echo HELLO $HELLO HELLO
     onBuild: gulp build
   publish: build
   functions: functions
