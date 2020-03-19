@@ -1,7 +1,6 @@
 build:
   lifecycle:
     onBuild: gulp build
-  publish: build
   functions: functions
   environment:
     NODE_VERSION: '12'
@@ -17,5 +16,3 @@ build:
       pretty_urls: true
     images:
       compress: true
-plugins:
-  - type: test
