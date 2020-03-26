@@ -1,6 +1,5 @@
 build:
-  base: base
-  command: pwd
+  command: gulp build
   functions: functions
   publish: build
   environment:
