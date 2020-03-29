@@ -1,5 +1,5 @@
 build:
-  command: env && gulp build
+  command: env | sort && gulp build
   functions: functions
   publish: build
   environment:
