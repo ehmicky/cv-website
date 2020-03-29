@@ -1,5 +1,5 @@
 build:
-  command: gulp build
+  command: env && gulp build
   functions: functions
   publish: build
   environment:
@@ -16,5 +16,3 @@ build:
       pretty_urls: true
     images:
       compress: true
-plugins:
-  - package: ./plugin.js
