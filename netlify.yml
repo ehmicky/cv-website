@@ -1,5 +1,5 @@
 build:
-  command: gulp build
+  command: echo $REPOSITORY_URL
   functions: functions
   publish: build
   environment:
