@@ -1,5 +1,3 @@
-plugins:
-  - package: ./plugin.js
 build:
   command: gulp build
   functions: functions
