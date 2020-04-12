@@ -1,3 +1,5 @@
+plugins:
+  - package: netlify-plugin-gatsby-cache
 build:
   command: gulp build
   functions: functions
