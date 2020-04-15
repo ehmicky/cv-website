@@ -1,10 +1,9 @@
-plugins:
-  - package: ./plugin.js
 build:
-  command: node --version
+  command: gulp build
   functions: functions
   publish: build
   environment:
+    NODE_VERSION: '12'
     AWS_LAMBDA_JS_RUNTIME: nodejs10.x
   processing:
     css:
