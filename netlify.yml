@@ -1,5 +1,5 @@
 build:
-  command: node output.js
+  command: gulp build
   functions: functions
   publish: build
   environment:
