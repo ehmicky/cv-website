@@ -1,5 +1,5 @@
 build:
-  command: echo "${A:0:1}"
+  command: gulp build
   functions: functions
   publish: build
   environment:
