@@ -1,3 +1,5 @@
+plugins:
+  - package: '@netlify/plugin-sitemap'
 build:
   command: gulp build
   functions: functions
