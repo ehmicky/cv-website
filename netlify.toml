@@ -1,5 +1,5 @@
 [build]
-command = "node --version"
+command = "gulp build"
 functions = "functions"
 publish = "build"
 
@@ -20,9 +20,6 @@ pretty_urls = true
 
 [build.processing.images]
 compress = true
-
-[[plugins]]
-package = "./plugin.js"
 
 # [[plugins]]
 # package = "@netlify/plugin-sitemap"
