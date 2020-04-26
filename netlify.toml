@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "echo $BASH_VERSION"
 functions = "functions"
 publish = "build"
 
