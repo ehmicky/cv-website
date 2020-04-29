@@ -22,4 +22,5 @@ pretty_urls = true
 compress = true
 
 [[plugins]]
-package = "./plugin.js"
+package = "@netlify/plugin-sitemap"
+
