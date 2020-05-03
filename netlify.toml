@@ -24,3 +24,5 @@ compress = true
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
+[[plugins]]
+package = "netlify-plugin-debug-cache"
