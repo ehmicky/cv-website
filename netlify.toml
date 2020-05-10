@@ -24,3 +24,5 @@ compress = true
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
+  [plugins.inputs]
+  buildDir = "/root"
