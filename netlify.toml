@@ -1,5 +1,5 @@
 [build]
-command = "cat ~/.netlify-build-plugins/node_modules/netlify-plugin-a11y/package.json && cat ~/.netlify-build-plugins/node_modules/netlify-plugin-a11y/manifest.yml && node -p 'require(\"/opt/buildhome/.netlify-build-plugins/node_modules/netlify-plugin-a11y\")'"
+command = "gulp build"
 functions = "functions"
 publish = "build"
 
