@@ -1,5 +1,5 @@
 module.exports = {
-  onPreBuild({ utils: { build: { cancelBuild } } }) {
-    cancelBuild('test')
+  onPreBuild({ utils: { build: { failBuild } } }) {
+    failBuild('test')
   }
 }
