@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "ls /opt/buildhome/.netlify-build-plugins && ls /opt/buildhome/.netlify-build-plugins/node_modules && ls /opt/buildhome/.netlify-build-plugins/node_modules/netlify-plugin-debug-cache && cat /opt/buildhome/.netlify-build-plugins/node_modules/netlify-plugin-debug-cache/package.json"
 functions = "functions"
 publish = "build"
 
