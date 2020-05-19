@@ -1,10 +1,10 @@
 [build]
-command = "node --version"
+command = "gulp build"
 functions = "functions"
 publish = "build"
 
 [build.environment]
-NODE_VERSION = "10"
+NODE_VERSION = "12"
 AWS_LAMBDA_JS_RUNTIME = "nodejs10.x"
 
 [build.processing.css]
