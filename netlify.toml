@@ -24,6 +24,3 @@ compress = true
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
-[[plugins]]
-package = "netlify-plugin-is-website-vulnerable"
-
