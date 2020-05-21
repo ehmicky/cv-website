@@ -22,4 +22,5 @@ pretty_urls = true
 compress = true
 
 [[plugins]]
-package = "netlify-plugin-rss"
+package = "@netlify/plugin-sitemap"
+
