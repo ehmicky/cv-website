@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "gulp buildd"
 functions = "functions"
 publish = "build"
 
@@ -22,5 +22,5 @@ pretty_urls = true
 compress = true
 
 [[plugins]]
-package = "netlify-plugin-rss"
+package = "@netlify/plugin-sitemap"
 
