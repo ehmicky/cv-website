@@ -6,6 +6,7 @@ publish = "build"
 [build.environment]
 NODE_VERSION = "12"
 AWS_LAMBDA_JS_RUNTIME = "nodejs10.x"
+AWS_REGION = "eu"
 
 [build.processing.css]
 bundle = true
