@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "gulp build && ls /opt/build"
 functions = "functions"
 publish = "build"
 
