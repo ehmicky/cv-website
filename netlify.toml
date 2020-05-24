@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "cat /opt/buildhome/.netlify-build-plugins/node_modules/@netlify/plugin-sitemap/package.json"
 functions = "functions"
 publish = "build"
 
@@ -21,5 +21,5 @@ pretty_urls = true
 [build.processing.images]
 compress = true
 
-[[plugins]]
-package = "@netlify/plugin-sitemap"
+#[[plugins]]
+#package = "@netlify/plugin-sitemap"
