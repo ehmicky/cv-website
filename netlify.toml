@@ -23,10 +23,3 @@ compress = true
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
-
-[[plugins]]
-package = "netlify-plugin-rss"
-  [plugins.inputs]
-  dirToScan = "a"
-  authorName = "a"
-  site_url = "a"
