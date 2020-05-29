@@ -1,0 +1,25 @@
+[build]
+command = "gulp build"
+functions = "functions"
+publish = "build"
+
+[build.environment]
+NODE_VERSION = "12"
+AWS_LAMBDA_JS_RUNTIME = "nodejs10.x"
+
+[build.processing.css]
+bundle = true
+minify = true
+
+[build.processing.js]
+bundle = true
+minify = true
+
+[build.processing.html]
+pretty_urls = true
+
+[build.processing.images]
+compress = true
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
