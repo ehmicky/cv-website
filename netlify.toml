@@ -22,4 +22,4 @@ pretty_urls = true
 compress = true
 
 [[plugins]]
-package = "@sentry/netlify-build-plugin"
+package = "@netlify/plugin-sitemap"
