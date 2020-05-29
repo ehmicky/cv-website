@@ -1,6 +1,6 @@
 [build]
 command = "gulp build"
-functions = "functions/simple.js"
+functions = "functions"
 publish = "build"
 
 [build.environment]
