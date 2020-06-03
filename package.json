@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "@ehmicky/dev-tasks": "^0.31.47",
-    "cypress": "^4.7.0",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-uglify": "^3.0.2"
