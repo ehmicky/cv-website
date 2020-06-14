@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "gulp build && ls /opt/build/repo/.netlify/ && ls /opt/build/repo/.netlify/cached_plugins && ls /opt/build/repo/.netlify/cached_plugins/node_modules && du -hs /opt/build/repo/.netlify/cached_plugins/node_modules && du -hs /opt/build/repo/.netlify/cached_plugins/node_modules/*"
 functions = "functions"
 publish = "build"
 
