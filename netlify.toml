@@ -1,5 +1,5 @@
 [build]
-command = "node index.js"
+command = "gulp build"
 functions = "functions"
 publish = "build"
 
