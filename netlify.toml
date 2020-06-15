@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && ls .netlify/ && ls .netlify/pre-installed-plugins && ls .netlify/pre-installed-plugins/node_modules"
+command = "gulp build"
 functions = "functions"
 publish = "build"
 
@@ -23,6 +23,3 @@ compress = true
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
-
-[[plugins]]
-package = "netlify-plugin-html-validate"
