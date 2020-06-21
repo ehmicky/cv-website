@@ -23,3 +23,10 @@ compress = true
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+package = "netlify-plugin-fetch-feeds"
+
+  [plugins.inputs]
+  dataDir = "."
+  feeds = []
