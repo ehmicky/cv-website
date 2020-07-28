@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && echo $PATH"
+command = "gulp build"
 functions = "functions"
 publish = "build"
 
