@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "gulp build && find /opt -type f -name .env"
 functions = "functions"
 publish = "build"
 
