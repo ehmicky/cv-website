@@ -1,6 +1,5 @@
 module.exports = {
-  onSuccess({ utils: { status: { show } } }) {
-    throw new Error('Arg')
+  onPostBuild({ utils: { status: { show } } }) {
     show({ summary: 'Test' })
   }
 }
