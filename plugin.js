@@ -1,6 +1,5 @@
 module.exports = {
-  onPostBuild({ utils: { status: { show }, build: { cancelBuild } } }) {
-    cancelBuild('Try this')
+  onPostBuild({ utils: { status: { show } } }) {
     show({ summary: 'Test' })
   }
 }
