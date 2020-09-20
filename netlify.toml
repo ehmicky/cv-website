@@ -1,6 +1,6 @@
 [build]
 command = "gulp build"
-functions = "functions"
+functions = "functionss"
 publish = "build"
 
 [build.environment]
