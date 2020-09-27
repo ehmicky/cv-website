@@ -1,5 +1,13 @@
 module.exports = {
-  onPostBuild({ utils: { status: { show } } }) {
-    show({ summary: 'Test' })
-  }
+  onPostBuild() {
+    console.log('onPostBuild')
+  },
+  onSuccess() {
+    console.log('onSuccess')
+    // Throw new Error('onSuccess error')
+  },
+  onEnd() {
+    console.log('onEnd')
+    // Throw new Error('onEnd error')
+  },
 }
