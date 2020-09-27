@@ -26,3 +26,6 @@ package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugin.js"
+
+[[plugins]]
+package = "@helloample/netlify-plugin-replace"
