@@ -26,6 +26,3 @@ package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugin.js"
-
-[[plugins]]
-package = "@netlify/plugin-lighthouse"
