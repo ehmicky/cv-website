@@ -15,6 +15,15 @@
       <script async defer src="https://buttons.github.io/buttons.js"></script>
       <script src="js/scripts.js" defer></script>
       <script async src="https://cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css" />
+      <script type="text/javascript" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+      <script type="text/javascript">
+        algoliasearchNetlify({
+          appId: 'GAJDYQGJOC',
+          apiKey: '<YOUR_ALGOLIA_SEARCH_API_KEY>',
+          indexName: 'netlify_418b94bc-93cd-411a-937a-ae4c734f17c4_<YOUR_BRANCH_NAME>',
+        });
+      </script>
   </head>
 
   <body>

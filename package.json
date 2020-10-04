@@ -4,6 +4,7 @@
   "description": "CV of ehmicky",
   "license": "Apache-2.0",
   "dependencies": {
+    "@algolia/netlify-plugin-crawler": "0.0.12",
     "math-avg": "^1.0.0"
   },
   "devDependencies": {
