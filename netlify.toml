@@ -1,7 +1,7 @@
 [build]
 command = "gulp build"
 functions = "functions"
-publish = "build"
+publish = "builddd"
 
 [build.environment]
 NODE_VERSION = "12"
