@@ -25,9 +25,4 @@ compress = true
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
-package = "@algolia/netlify-plugin-crawler"
-  [plugins.inputs]
-  branches = ["main"]
-
-[[plugins]]
 package = "./plugin.js"
