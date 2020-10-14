@@ -1,7 +1,7 @@
 [build]
-command = "gulp build"
+command = "gulp build && ls"
 functions = "functions"
-publish = "build"
+publish = "does-not-exist"
 
 [build.environment]
 NODE_VERSION = "12"
