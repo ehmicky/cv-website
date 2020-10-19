@@ -1,7 +1,7 @@
 [build]
-command = "gulp build && ls"
+command = "gulp build"
 functions = "functions"
-publish = "does-not-exist"
+publish = "build"
 
 [build.environment]
 NODE_VERSION = "12"
@@ -20,6 +20,9 @@ pretty_urls = true
 
 [build.processing.images]
 compress = true
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugin.js"
