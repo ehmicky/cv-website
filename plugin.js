@@ -1,5 +1,6 @@
 module.exports = {
-  onPostBuild({ utils: { status: { show } } }) {
+  onPreBuild({ utils: { status: { show } } }) {
+    process.env.CONTEXT = 'deploy-preview'
     show({ summary: 'Test' })
   }
 }
