@@ -1,6 +1,5 @@
 module.exports = {
-  onPostBuild({ utils: { status: { show } }, packageJson }) {
-    console.log(packageJson)
+  onPostBuild({ utils: { status: { show } } }) {
     show({ summary: 'Test' })
   }
 }
