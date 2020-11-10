@@ -2,7 +2,6 @@
 command = "gulp build"
 functions = "functions"
 publish = "build"
-ignore = "[[ a == a ]]"
 
 [build.environment]
 NODE_VERSION = "12"
