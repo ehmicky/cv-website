@@ -21,9 +21,6 @@ pretty_urls = true
 [build.processing.images]
 compress = true
 
-[context.test]
-publish = "."
-
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
