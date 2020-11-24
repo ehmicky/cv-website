@@ -1,1 +1,15 @@
-{{}
+{
+  "name": "ehmicky-cv-website",
+  "version": "2.0.0",
+  "description": "CV of ehmicky",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "math-avg": "^1.0.0"
+  },
+  "devDependencies": {
+    "@ehmicky/dev-tasks": "^0.31.77",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}
