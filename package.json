@@ -4,6 +4,7 @@
   "description": "CV of ehmicky",
   "license": "Apache-2.0",
   "dependencies": {
+    "@netlify/plugin-sitemap": "^0.5.1",
     "math-avg": "^1.0.0"
   },
   "devDependencies": {
