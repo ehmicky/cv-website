@@ -22,7 +22,7 @@ pretty_urls = true
 compress = true
 
 [[plugins]]
-package = "node-fetch"
+package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugin.js"
