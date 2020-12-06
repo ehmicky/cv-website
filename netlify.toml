@@ -25,4 +25,7 @@ compress = true
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
+package = "test-each"
+
+[[plugins]]
 package = "./plugin.js"
