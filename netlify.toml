@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "gulp build && cat .netlify/plugins/package.json && ls .netlify/plugins/node_modules"
 functions = "functions"
 publish = "build"
 
@@ -23,6 +23,9 @@ compress = true
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+package = "netlify-plugin-cache"
 
 [[plugins]]
 package = "./plugin.js"
