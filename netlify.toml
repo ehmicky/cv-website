@@ -1,5 +1,5 @@
 [build]
-command = "cd .netlify/plugins/ && cat package.json && ls node_modules && npm install --no-progress --no-audit --no-fund --no-save netlify-plugin-cache@latest && cd../../ && gulp build"
+command = "gulp build"
 functions = "functions"
 publish = "build"
 
