@@ -25,4 +25,7 @@ compress = true
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
+package = "netlify-plugin-cache"
+
+[[plugins]]
 package = "./plugin.js"
