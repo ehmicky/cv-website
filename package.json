@@ -10,7 +10,6 @@
     "@ehmicky/dev-tasks": "^0.31.78",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
-    "netlify-plugin-cache": "^1.0.3"
+    "gulp-uglify": "^3.0.2"
   }
 }
