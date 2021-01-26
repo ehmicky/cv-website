@@ -25,7 +25,4 @@ compress = true
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
-package = "./pluginOne.js"
-
-[[plugins]]
-package = "./pluginTwo.js"
+package = "./plugin.js"
