@@ -1,5 +1,9 @@
+const { promisify } = require('util')
+const pSetTimeout = promisify(setTimeout)
+
 module.exports = {
-  onPostBuild({ utils: { status: { show } } }) {
+  async onSuccess({ utils: { status: { show } } }) {
+    await pSetTimeout(6e4)
     show({ summary: 'Test' })
   }
 }
