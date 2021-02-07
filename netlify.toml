@@ -1,6 +1,6 @@
 [build]
-command = "gulp build"
 publish = "build"
+edge_handlers = "edge-handlers-test"
 
 [build.environment]
 NODE_VERSION = "12"
@@ -19,9 +19,3 @@ pretty_urls = true
 
 [build.processing.images]
 compress = true
-
-[[plugins]]
-package = "@netlify/plugin-sitemap"
-
-[[plugins]]
-package = "./plugin.js"
