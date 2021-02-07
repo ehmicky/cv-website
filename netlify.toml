@@ -1,5 +1,4 @@
 [build]
-command = "gulp build"
 publish = "build"
 
 [build.environment]
@@ -19,9 +18,3 @@ pretty_urls = true
 
 [build.processing.images]
 compress = true
-
-[[plugins]]
-package = "@netlify/plugin-sitemap"
-
-[[plugins]]
-package = "./plugin.js"
