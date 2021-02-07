@@ -1,6 +1,6 @@
-import { formatDistance, subDays } from "date-fns";
+import avg from "math-avg";
 
 export async function onRequest(ev) {
-  const timePassed = formatDistance(subDays(new Date(), 3), new Date());
-  console.log(timePassed);
+  const number = avg([2, 4])
+  console.log(`${number} ${Date.now()}`);
 }
