@@ -1,6 +1,7 @@
 [build]
 command = "gulp build"
 publish = "build"
+ignore = "bash -i -c 'node --version'"
 
 [build.environment]
 NODE_VERSION = "15"
