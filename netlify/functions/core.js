@@ -1,6 +1,5 @@
-const { version } = require('process')
-const fetch = require('node-fetch').default
+import { version } from 'process'
 
-module.exports.handler = async function(event, context) {
-  return { statusCode: 200, body: `Node.js ${version} ${Date.now()} ${fetch}` }
+export const handler = async function(event, context) {
+  return { statusCode: 200, body: `Node.js ${version} ${Date.now()}` }
 }
