@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && nmcli --help"
+command = "gulp build"
 publish = "build"
 
 [build.environment]
