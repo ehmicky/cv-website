@@ -1,6 +1,5 @@
 module.exports = {
-  onPostBuild({ utils: { status: { show } }, constants: { CACHE_DIR } }) {
-    console.log({ CACHE_DIR })
+  onPostBuild({ utils: { status: { show } } }) {
     show({ summary: 'Test' })
   }
 }
