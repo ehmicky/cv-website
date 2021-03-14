@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "gulp buildd"
 publish = "build"
 
 [build.environment]
