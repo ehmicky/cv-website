@@ -4,9 +4,7 @@
   "description": "CV of ehmicky",
   "license": "Apache-2.0",
   "dependencies": {
-    "@netlify/plugin-nextjs": "^3.0.3",
-    "math-avg": "^1.0.0",
-    "next": "^9.5.5"
+    "math-avg": "^1.0.0"
   },
   "devDependencies": {
     "@ehmicky/dev-tasks": "^0.31.87",
