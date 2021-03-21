@@ -1,6 +1,6 @@
 module.exports = {
-  onPreBuild({ utils: { status: { show }, build: { failBuild } } }) {
-    failBuild('Test')
+  onPreBuild({ utils: { status: { show }, build: { cancelBuild } } }) {
+    cancelBuild('Test')
     show({ summary: 'Test' })
   }
 }
