@@ -4,6 +4,7 @@
   "description": "CV of ehmicky",
   "license": "Apache-2.0",
   "dependencies": {
+    "ansi_up": "^5.0.0",
     "math-avg": "^1.0.0"
   },
   "devDependencies": {
