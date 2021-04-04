@@ -1,9 +1,8 @@
-const AnsiUp = require('ansi_up')
-const ansiUp = new AnsiUp.default
+const hyperlinker = require('hyperlinker')
 
 module.exports = {
   onPreBuild({ utils: { status: { show } } }) {
-    console.log(ansiUp.ansi_to_html(']8;;http://www.google.com\x07b b'))
+    console.log(hyperlinker('Netlify', 'https://www.netlify.com'))
     show({ summary: 'Test' })
   }
 }
