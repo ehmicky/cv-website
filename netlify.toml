@@ -1,10 +1,12 @@
 [build]
-command = "gulp build"
 publish = "build"
 
 [build.environment]
 NODE_VERSION = "15"
 AWS_LAMBDA_JS_RUNTIME = "nodejs10.x"
+
+[context.production]
+Command = "gulp buildd"
 
 [build.processing.css]
 bundle = true
