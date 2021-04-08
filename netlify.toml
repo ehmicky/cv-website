@@ -2,7 +2,7 @@
 command = "gulp build"
 publish = "build"
 
-[context.production.environment]
+[build.environment]
 NODE_VERSION = "15"
 AWS_LAMBDA_JS_RUNTIME = "nodejs10.x"
 
