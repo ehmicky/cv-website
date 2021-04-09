@@ -23,10 +23,11 @@ compress = true
 [functions]
 node_bundler = "esbuild"
 
-[[context.production.plugins]]
+[[plugins]]
 package = "@netlify/plugin-sitemap"
-  [context.production.plugins.inputs]
-  trailingSlash = true
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugin.js"
