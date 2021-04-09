@@ -25,8 +25,9 @@ node_bundler = "esbuild"
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
-  [plugins.inputs]
-  trailingSlash = true
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugin.js"
