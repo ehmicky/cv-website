@@ -4,8 +4,7 @@
   "description": "CV of ehmicky",
   "license": "Apache-2.0",
   "dependencies": {
-    "math-avg": "^1.0.0",
-    "terminal-link": "^2.1.1"
+    "math-avg": "^1.0.0"
   },
   "devDependencies": {
     "@ehmicky/dev-tasks": "^0.31.89",
