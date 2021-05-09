@@ -24,6 +24,9 @@ compress = true
 node_bundler = "esbuild"
 
 [[plugins]]
+package = "netlify-plugin-html-validate"
+
+[[plugins]]
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
