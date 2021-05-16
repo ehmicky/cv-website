@@ -1,6 +1,6 @@
 [build]
 command = "gulp build"
-publish = "build"
+base = "src"
 
 [build.environment]
 NODE_VERSION = "15"
