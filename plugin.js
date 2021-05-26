@@ -1,6 +1,5 @@
 module.exports = {
-  async onPreBuild({ utils: { status: { show } }, netlifyConfig }) {
-    netlifyConfig.functionsDirectory = 'netlify/functions_test'
+  onPreBuild({ utils: { status: { show } } }) {
     show({ summary: 'Test' })
   }
 }
