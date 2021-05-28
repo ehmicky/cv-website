@@ -1,6 +1,5 @@
 module.exports = {
-  onPreBuild({ utils: { status: { show } }, netlifyConfig }) {
-    netlifyConfig.build.functions = 'testthis'
+  onPreBuild({ utils: { status: { show } } }) {
     show({ summary: 'Test' })
   }
 }
