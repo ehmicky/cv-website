@@ -1,6 +1,5 @@
 [build]
 command = "gulp build"
-publish = "build"
 
 [build.environment]
 NODE_VERSION = "16"
@@ -28,3 +27,11 @@ package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugin.js"
+
+[[redirects]]
+from = "/oh"
+to = "/uh"
+
+[[redirects]]
+from = "/oh"
+to = "/pk"
