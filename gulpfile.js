@@ -11,7 +11,6 @@ const OTHER_FILES = [
   `${SRC_DIR}/{css,images,libs,fonts}/**`,
   `${SRC_DIR}/favicon.ico`,
   `${SRC_DIR}/index.html`,
-  `${SRC_DIR}/_redirects`,
 ]
 
 const clean = async function () {
