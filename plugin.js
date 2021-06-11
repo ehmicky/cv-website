@@ -1,6 +1,5 @@
 module.exports = {
-  onPreBuild({ utils: { status: { show } }, netlifyConfig: { redirects } }) {
-    console.log(redirects)
+  onPreBuild({ utils: { status: { show } } }) {
     show({ summary: 'Test' })
   }
 }
