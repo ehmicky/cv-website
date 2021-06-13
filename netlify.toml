@@ -28,3 +28,9 @@ package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugin.js"
+
+[[redirects]]
+from = "/here"
+to = "/there"
+  [redirects.conditions]
+  Role = ["one", "two"]
