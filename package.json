@@ -5,7 +5,8 @@
   "license": "Apache-2.0",
   "type": "module",
   "dependencies": {
-    "math-avg": "^1.0.0"
+    "math-avg": "^1.0.0",
+    "netlify-plugin-html-validate": "^0.1.1"
   },
   "devDependencies": {
     "@ehmicky/dev-tasks": "^1.0.4",
