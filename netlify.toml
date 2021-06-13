@@ -32,5 +32,7 @@ package = "./plugin.js"
 [[redirects]]
 from = "/here"
 to = "/there"
+  #[redirects.query]
+  #test = "one"
   #[redirects.conditions]
   #Role = ["one", "two"]
