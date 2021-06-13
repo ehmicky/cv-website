@@ -1,7 +1,7 @@
 // eslint-disable-next-line node/no-unpublished-import
 import del from 'del'
 // eslint-disable-next-line node/no-extraneous-import
-import { src, dest, watch as watchFiles, series } from 'gulp'
+import gulp from 'gulp'
 // eslint-disable-next-line node/no-unpublished-import
 import gulpUglify from 'gulp-uglify'
 
@@ -21,15 +21,16 @@ const clean = async function () {
 }
 
 const uglify = function () {
-  return src(JS_FILES).pipe(gulpUglify()).pipe(dest(BUILD_DIR))
+  return gulp.src(JS_FILES).pipe(gulpUglify()).pipe(gulp.dest(BUILD_DIR))
 }
 
 const move = function () {
-  return src(OTHER_FILES).pipe(dest(BUILD_DIR))
+  return gulp.src(OTHER_FILES).pipe(gulp.dest(BUILD_DIR))
 }
 
-export const build = series(clean, move, uglify)
+export const build = gulp.series(clean, move, uglify)
 
 export const watch = function () {
-  return watchFiles(`${SRC_DIR}/**`, build)
+  // eslint-disable-next-line fp/no-mutating-methods
+  return gulp.watch(`${SRC_DIR}/**`, build)
 }
