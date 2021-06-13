@@ -1,5 +1,6 @@
 import { version } from 'process'
 
-export const handler = async function(event, context) {
+// eslint-disable-next-line require-await
+export const handler = async function () {
   return { statusCode: 200, body: `Node.js ${version} ${Date.now()}` }
 }

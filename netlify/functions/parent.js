@@ -1,5 +1,6 @@
-const { name } = require('../../package.json')
+import { name } from '../../package.json'
 
-export const handler = async function(event, context) {
+// eslint-disable-next-line require-await
+export const handler = async function () {
   return { statusCode: 200, body: `${name} ${Date.now()}` }
 }
