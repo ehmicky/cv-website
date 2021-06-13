@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "gulp build && cat /tmp/netlify_config.json"
 publish = "build"
 
 [build.environment]
