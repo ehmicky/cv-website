@@ -27,9 +27,6 @@ node_bundler = "esbuild"
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
-package = "netlify-plugin-html-validate"
-
-[[plugins]]
 package = "./plugin.cjs"
 
 [[redirects]]
