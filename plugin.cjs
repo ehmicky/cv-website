@@ -3,7 +3,9 @@ module.exports = {
     utils: {
       status: { show },
     },
+    netlifyConfig,
   }) {
+    console.log(netlifyConfig)
     show({ summary: 'Test' })
   },
 }
