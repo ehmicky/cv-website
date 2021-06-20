@@ -28,6 +28,5 @@ const move = function () {
 export const build = gulp.series(clean, move, uglify)
 
 export const watch = function () {
-  // eslint-disable-next-line fp/no-mutating-methods
   return gulp.watch(`${SRC_DIR}/**`, build)
 }
