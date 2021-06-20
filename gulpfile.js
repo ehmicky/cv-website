@@ -1,7 +1,5 @@
-// eslint-disable-next-line node/no-unpublished-import
 import del from 'del'
 import gulp from 'gulp'
-// eslint-disable-next-line node/no-unpublished-import
 import gulpUglify from 'gulp-uglify'
 
 const SRC_DIR = 'src'
