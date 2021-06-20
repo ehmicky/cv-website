@@ -1,6 +1,5 @@
 // eslint-disable-next-line node/no-unpublished-import
 import del from 'del'
-// eslint-disable-next-line node/no-extraneous-import
 import gulp from 'gulp'
 // eslint-disable-next-line node/no-unpublished-import
 import gulpUglify from 'gulp-uglify'
