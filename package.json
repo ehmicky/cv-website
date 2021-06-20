@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@ehmicky/dev-tasks": "^1.0.30",
-    "del": "^5.1.0",
+    "del": "^6.0.0",
     "gulp-uglify": "^3.0.2"
   }
 }
