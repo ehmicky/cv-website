@@ -34,9 +34,9 @@ from = "/here"
 to = "/there"
 status = 200
 force = false
-  [redirects.headers]
-  now = "then"
-  [redirects.query]
-  test = "one"
-  [redirects.conditions]
-  Role = ["one", "two"]
+  #[redirects.headers]
+  #now = "then"
+  #[redirects.query]
+  #test = "one"
+  #[redirects.conditions]
+  #Role = ["one", "two"]
