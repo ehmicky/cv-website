@@ -6,4 +6,7 @@ module.exports = {
   }) {
     show({ summary: 'Test' })
   },
+  onBuild({ netlifyConfig: { redirects } }) {
+    console.log(redirects)
+  },
 }
