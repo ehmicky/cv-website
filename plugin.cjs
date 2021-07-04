@@ -13,10 +13,4 @@ module.exports = {
     show({ summary: 'Test' })
     netlifyConfig.redirects = [...netlifyConfig.redirects, { from: '/one', to: '/two' }]
   },
-  async onPostBuild({ constants: { PUBLISH_DIR } }) {
-    console.log(await pReaddir(PUBLISH_DIR))
-  },
-  async onSuccess({ constants: { PUBLISH_DIR } }) {
-    console.log(await pReaddir(PUBLISH_DIR))
-  },
 }
