@@ -17,6 +17,9 @@ minify = true
 [build.processing.html]
 pretty_urls = true
 
+[build.processing.images]
+compress = true
+
 [functions]
 node_bundler = "esbuild"
 
