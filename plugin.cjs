@@ -10,7 +10,6 @@ module.exports = {
     },
     netlifyConfig,
   }) {
-    process.exit(1)
     show({ summary: 'Test' })
     netlifyConfig.redirects = [...netlifyConfig.redirects, { from: '/one', to: '/two' }]
   },
