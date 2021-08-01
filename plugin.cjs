@@ -12,5 +12,6 @@ module.exports = {
   }) {
     show({ summary: 'Test' })
     netlifyConfig.redirects.push({ from: '/one', to: '/two' })
+    netlifyConfig.functions['*'].directory = "netlify/fun/"
   },
 }
