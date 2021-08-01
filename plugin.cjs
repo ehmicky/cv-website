@@ -11,6 +11,6 @@ module.exports = {
     netlifyConfig,
   }) {
     show({ summary: 'Test' })
-    netlifyConfig.redirects = [...netlifyConfig.redirects, { from: '/one', to: '/two' }]
+    netlifyConfig.redirects.push({ from: '/one', to: '/two' })
   },
 }
