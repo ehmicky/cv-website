@@ -1,1 +1,3 @@
-/oh /uh
+# @netlify/plugin-gatsby redirects start
+/api/* /.netlify/functions/__gatsby-functions 200
+# @netlify/plugin-gatsby redirects end
