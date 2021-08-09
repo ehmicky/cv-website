@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && mkdir -p .netlify/rust-functions-cache && ls .netlify/rust-functions-cache && touch .netlify/rust-functions-cache/ooi"
+command = "gulp build"
 publish = "build"
 
 [build.environment]
