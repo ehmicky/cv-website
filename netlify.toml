@@ -52,4 +52,3 @@ for = "/gray"
   [headers.values]
   TEST = "colour"
   TEST_TWO = "colour_two"
-  YOYO = "true"
