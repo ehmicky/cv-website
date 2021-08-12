@@ -30,9 +30,9 @@ package = "@netlify/plugin-sitemap"
 package = "./plugin.cjs"
 
 [[redirects]]
-from = "/api/*"
-to = "/.netlify/functions/__gatsby-functions"
-status = 200
+from = "/here"
+to = "/there"
+force = false
 
 [[headers]]
 for = "/blue"
