@@ -34,16 +34,6 @@ from = "/here"
 to = "/there"
 force = false
 
-[[redirects]]
-from = "/.netlify/here"
-to = "/there"
-force = false
-
-[[redirects]]
-from = "/.netlify/heree"
-to = "/there"
-force = false
-
 [[headers]]
 for = "/blue"
   [headers.values]
