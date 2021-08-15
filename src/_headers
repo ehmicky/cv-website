@@ -4,8 +4,9 @@
 
 /yellow
   TEST: cyan
-  TEST_THREE: three
+  TEST_THREE: color
 
 /yellow
   TEST: magenta
-  TEST_TWO: three
+  TEST_TWO: color
+  EMPTY:

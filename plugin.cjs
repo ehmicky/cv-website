@@ -1,17 +1,15 @@
-const { readdir } = require('fs')
-const { promisify } = require('util')
-
-const pReaddir = promisify(readdir)
-
 module.exports = {
-  onPreBuild({
-    utils: {
-      status: { show },
-    },
-    netlifyConfig,
-  }) {
-    show({ summary: 'Test' })
-    netlifyConfig.redirects.push({ from: '/one', to: '/two' })
-    netlifyConfig.headers.push({ for: '/couleur', values: { BLUE: 'bleu' } })
+  onPostBuild({ netlifyConfig: { redirects, headers } }) {
+    console.log('Redirects', redirects)
+    console.log('Headers', headers)
+
+    redirects.push({
+      from: '/this_path',
+      to: '/that_path',
+    })
+    headers.push({
+      for: '/example_path',
+      values: { HEADER_NAME: 'header_value' },
+    })
   },
 }
