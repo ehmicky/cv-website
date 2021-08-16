@@ -52,8 +52,3 @@ for = "/gray"
   [headers.values]
   TEST = "colour"
   TEST_TWO = "colour_two"
-
-[[headers]]
-for = "/a/:b"
-  [headers.values]
-  YOYO = "ya"
