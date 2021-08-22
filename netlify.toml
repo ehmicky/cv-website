@@ -1,6 +1,6 @@
 [build]
 command = "gulp build"
-publish = "build"
+publish = "a"
 
 [build.environment]
 NODE_VERSION = "16"
