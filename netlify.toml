@@ -1,5 +1,5 @@
 [build]
-command = ""
+command = "gulp build"
 publish = "build"
 
 [build.environment]
@@ -19,6 +19,15 @@ pretty_urls = true
 
 [build.processing.images]
 compress = true
+
+[functions]
+node_bundler = "esbuild"
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+package = "./plugin.cjs"
 
 [[redirects]]
 from = "/here"
