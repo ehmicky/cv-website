@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "gulp build && ls -l /opt/buildhome/netlify-build-node-bin"
 publish = "build"
 
 [build.environment]
