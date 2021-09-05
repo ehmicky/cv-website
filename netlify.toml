@@ -44,7 +44,7 @@ for = "/blue"
 [[headers]]
 for = "/gray"
   [headers.values]
-  TEST = "color"
+  Test = "color"
   TEST_THREE = ["color_three", "color_three_three"]
 
 [[headers]]
