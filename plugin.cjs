@@ -1,8 +1,3 @@
-const { readdir } = require('fs')
-const { promisify } = require('util')
-
-const pReaddir = promisify(readdir)
-
 module.exports = {
   onPreBuild({
     utils: {
