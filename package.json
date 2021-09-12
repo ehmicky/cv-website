@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@ehmicky/dev-tasks": "^1.0.46",
+    "@netlify/plugin-lighthouse": "^2.1.2",
     "del": "^6.0.0",
     "gulp-uglify": "^3.0.2"
   }
