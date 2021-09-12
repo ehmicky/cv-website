@@ -10,6 +10,7 @@
   "devDependencies": {
     "@ehmicky/dev-tasks": "^1.0.46",
     "del": "^6.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "netlify-plugin-html-validate": "^1.1.1"
   }
 }
