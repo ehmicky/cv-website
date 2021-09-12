@@ -7,5 +7,5 @@
   TEST_THREE: three
 
 /yellow
-  TEST: magenta
+  Test: magenta
   TEST_TWO: three
