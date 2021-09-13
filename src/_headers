@@ -4,8 +4,8 @@
 
 /yellow
   TEST: cyan
-  TEST: cyanTwo
   TEST_THREE: three
 
 /yellow
+  TEST: magenta
   TEST_TWO: three
