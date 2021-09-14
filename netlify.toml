@@ -28,3 +28,27 @@ package = "@netlify/plugin-sitemap"
 
 [[plugins]]
 package = "./plugin.cjs"
+
+[[redirects]]
+from = "/here"
+to = "/there"
+force = false
+
+[[headers]]
+for = "/blue"
+  [headers.values]
+  TEST = '''
+  red,
+  green'''
+
+[[headers]]
+for = "/gray"
+  [headers.values]
+  TEST = "color"
+  TEST_THREE = ["color_three", "color_three_three"]
+
+[[headers]]
+for = "/gray"
+  [headers.values]
+  TEST = "colour"
+  TEST_TWO = "colour_two"
