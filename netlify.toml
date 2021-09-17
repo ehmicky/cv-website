@@ -1,5 +1,5 @@
 [build]
-command = "$CHROME_PATH --version"
+command = "gulp build"
 publish = "build"
 
 [build.environment]
@@ -22,9 +22,6 @@ compress = true
 
 [functions]
 node_bundler = "esbuild"
-
-[[plugins]]
-package = "netlify-plugin-chromium"
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
