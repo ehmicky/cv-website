@@ -24,9 +24,6 @@ compress = true
 node_bundler = "esbuild"
 
 [[plugins]]
-package = "@netlify/plugin-lighthouse"
-
-[[plugins]]
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
