@@ -24,6 +24,9 @@ compress = true
 node_bundler = "esbuild"
 
 [[plugins]]
+package = "netlify-plugin-subfont"
+
+[[plugins]]
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
