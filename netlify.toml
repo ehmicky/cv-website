@@ -24,6 +24,9 @@ compress = true
 node_bundler = "esbuild"
 
 [[plugins]]
+package = "netlify-plugin-prisma-provider"
+
+[[plugins]]
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
