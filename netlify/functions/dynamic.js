@@ -1,6 +1,6 @@
 const dependency = 'test'
 
-export const handler = async function () {
-  const value = await import(dependency)
+module.exports.handler = async function () {
+  const value = require(dependency)
   return { statusCode: 200, body: String(value) }
 }
