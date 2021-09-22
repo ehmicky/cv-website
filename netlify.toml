@@ -3,7 +3,7 @@ command = "gulp build"
 publish = "build"
 
 [build.environment]
-#NODE_VERSION = "16"
+NODE_VERSION = "16"
 AWS_LAMBDA_JS_RUNTIME = "nodejs12.x"
 
 [build.processing.css]
@@ -22,23 +22,6 @@ compress = true
 
 [functions]
 node_bundler = "esbuild"
-
-[[plugins]]
-package = "netlify-plugin-fetch-feeds"
-  [plugins.inputs]
-    # Where should data files reside
-    dataDir = "site/_data"
-
-    # All the feeds we wish to gather for use in the build
-
-    [[plugins.inputs.feeds]]
-      name = "hawksworx"
-      url = "https://hawksworx.com/feed.json"
-      ttl = 3600
-    [[plugins.inputs.feeds]]
-      name = "netlify"
-      url = "https://www.netlify.com/blog/index.xml"
-      ttl = 86400
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
