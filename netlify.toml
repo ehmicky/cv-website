@@ -5,7 +5,6 @@ publish = "build"
 [build.environment]
 NODE_VERSION = "16"
 AWS_LAMBDA_JS_RUNTIME = "nodejs12.x"
-ALGOLIA_API_KEY = "a"
 
 [build.processing.css]
 bundle = true
@@ -23,11 +22,6 @@ compress = true
 
 [functions]
 node_bundler = "esbuild"
-
-[[plugins]]
-package = "@algolia/netlify-plugin-crawler"
-  [plugins.inputs]
-  branches = ["main"]
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
