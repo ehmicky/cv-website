@@ -1,7 +1,7 @@
-const avg = require('math-avg')
+import avg from 'math-avg'
 
 // eslint-disable-next-line require-await
-module.exports.handler = async function () {
+export const handler = async function () {
   const number = avg([2, 3])
   return { statusCode: 200, body: `${number} ${Date.now()}` }
 }
