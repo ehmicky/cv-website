@@ -12,7 +12,6 @@ force = true
 [build.environment]
 NODE_VERSION = "16"
 AWS_LAMBDA_JS_RUNTIME = "nodejs12.x"
-NETLIFY_USE_YARN = "true"
 
 [build.processing.css]
 bundle = true
