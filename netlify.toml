@@ -1,13 +1,6 @@
 [build]
 command = "gulp build"
 publish = "build"
-ignore = "git log -1 --pretty=%s | grep -i -w '\[skip ci\]'"
-
-[[redirects]]
-from = "/events"
-to = "https://google.com"
-status = 301
-force = true
 
 [build.environment]
 NODE_VERSION = "16"
