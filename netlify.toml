@@ -1,7 +1,6 @@
 [build]
-command = "gulp build"
+command = "gulp build && env | sort"
 publish = "build"
-ignore = ". /opt/buildhome/.netlify-build-nvm/nvm.sh && node -p o"
 
 [build.environment]
 NODE_VERSION = "16"
