@@ -1,6 +1,7 @@
 [build]
 command = "gulp build"
 publish = "build"
+ignore = "node --invalid"
 
 [build.environment]
 NODE_VERSION = "16"
