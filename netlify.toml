@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "gulp build && echo $HOME && pwd"
 publish = "build"
 
 [build.environment]
