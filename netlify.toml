@@ -3,7 +3,7 @@ command = "gulp build"
 publish = "build"
 
 [build.environment]
-NODE_VERSION = "12"
+NODE_VERSION = "16"
 AWS_LAMBDA_JS_RUNTIME = "nodejs12.x"
 
 [build.processing.css]
@@ -22,12 +22,6 @@ compress = true
 
 [functions]
 node_bundler = "esbuild"
-
-[[plugins]]
-package = "netlify-plugin-fetch-feeds"
-  [plugins.inputs]
-  dataDir = "feedsDir"
-  feeds = []
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
