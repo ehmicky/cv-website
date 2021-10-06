@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && cat /etc/bash.bashrc && echo '----' && cat ~/.bashrc && echo '----' && cat ~/.bash_profile && echo '----' && cat /etc/profile && ls /etc/profile.d"
+command = "gulp build"
 publish = "build"
 
 [build.environment]
