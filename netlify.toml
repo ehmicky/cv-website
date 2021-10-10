@@ -1,6 +1,7 @@
 [build]
 command = "gulp build"
 publish = "build"
+ignore = "git log -1 --pretty=%s | grep -i -w '\[skip ci\]'"
 
 [build.environment]
 NODE_VERSION = "16"
