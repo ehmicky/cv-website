@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && ls /opt/buildhome"
+command = "gulp build"
 publish = "build"
 
 [build.environment]
