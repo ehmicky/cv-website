@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && /opt/buildhome/node-deps/node_modules/.bin/zip-it-and-ship-it --version"
+command = "gulp build"
 publish = "build"
 
 [build.environment]
