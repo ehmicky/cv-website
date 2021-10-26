@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && ~/netlify-build-node-bin/node --version && ~/node-deps/node_modules/.bin/zip-it-and-ship-it --version"
+command = "gulp build"
 publish = "build"
 
 [build.environment]
