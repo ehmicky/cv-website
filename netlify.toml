@@ -33,6 +33,8 @@ package = "./plugin.cjs"
 from = "/here"
 to = "/there"
 force = false
+  [redirects.conditions]
+  country = ["it"]
 
 [[headers]]
 for = "/blue"
