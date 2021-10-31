@@ -1,7 +1,6 @@
 [build]
 command = "gulp build"
 publish = "build"
-ignore = "node -p 'process.exitCode = 0'"
 
 [build.environment]
 NODE_VERSION = "16"
