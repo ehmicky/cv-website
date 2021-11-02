@@ -34,7 +34,7 @@ from = "/here"
 to = "/there"
 force = false
   [redirects.conditions]
-  country = ["it"]
+  Country = ["it"]
 
 [[headers]]
 for = "/blue"
