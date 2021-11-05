@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && ls -la ~/node-deps"
+command = "gulp build"
 publish = "build"
 
 [build.environment]
