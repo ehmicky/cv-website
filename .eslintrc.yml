@@ -1,1 +1,6 @@
 extends: '@ehmicky/eslint-config/.eslintrc.yml'
+rules:
+  import/unambiguous: 0
+  no-restricted-globals: 0
+  node/prefer-global/process: 0
+  node/no-process-env: 0
