@@ -1,7 +1,6 @@
 [build]
 command = "gulp build"
 publish = "build"
-ignore = "node skip_build.js"
 
 [build.environment]
 NODE_VERSION = "16"
