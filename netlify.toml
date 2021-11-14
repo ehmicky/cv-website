@@ -24,10 +24,7 @@ compress = true
 node_bundler = "esbuild"
 
 [[plugins]]
-package = "@netlify/plugin-sitemap"
-
-[[plugins]]
-package = "./plugin.cjs"
+package = "./base/plugin.ts"
 
 [[redirects]]
 from = "/here"
