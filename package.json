@@ -3,12 +3,12 @@
   "version": "2.0.0",
   "description": "CV of ehmicky",
   "license": "Apache-2.0",
-  "type": "module",
   "dependencies": {
     "math-avg": "^2.0.0"
   },
   "devDependencies": {
     "@ehmicky/dev-tasks": "^1.0.56",
+    "@netlify/build": "^18.23.1",
     "del": "^6.0.0",
     "gulp-uglify": "^3.0.2"
   }
