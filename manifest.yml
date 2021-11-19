@@ -1,4 +1,1 @@
 name: test
-inputs:
-  - name: one
-    description: One
