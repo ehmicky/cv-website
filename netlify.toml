@@ -1,7 +1,6 @@
 [build]
 command = "gulp build"
 publish = "build"
-base = "base"
 
 [build.environment]
 NODE_VERSION = "16"
@@ -25,7 +24,10 @@ compress = true
 node_bundler = "esbuild"
 
 [[plugins]]
-package = "./plugin.ts"
+package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+package = "./plugin.cjs"
 
 [[redirects]]
 from = "/here"
