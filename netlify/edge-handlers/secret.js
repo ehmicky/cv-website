@@ -1,5 +1,5 @@
-// eslint-disable-next-line require-await
-export const onRequest = async function (event) {
+// eslint-disable-next-line func-style
+export function onRequest(event) {
   // eslint-disable-next-line no-console, no-restricted-globals
   console.log(event.requestMeta.url.pathname)
 
