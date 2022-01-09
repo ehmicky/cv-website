@@ -1,4 +1,7 @@
 export const onRequest = function (event) {
+  // eslint-disable-next-line no-console, no-restricted-globals
+  console.log(event.requestMeta.url.pathname)
+
   if (event.requestMeta.url.pathname === '/secret') {
     event.replaceResponse(
       // eslint-disable-next-line no-undef
