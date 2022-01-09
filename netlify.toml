@@ -1,6 +1,7 @@
 [build]
 command = "gulp build"
 publish = "build"
+edge_handlers = "netlify/edge-handlers"
 
 [build.environment]
 NODE_VERSION = "16"
