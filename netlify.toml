@@ -29,6 +29,10 @@ package = "@netlify/plugin-sitemap"
 [[plugins]]
 package = "./plugin"
 
+[[edge_handlers]]
+path = "/secret"
+handler = "secret"
+
 [[redirects]]
 from = "/here"
 to = "/there"
