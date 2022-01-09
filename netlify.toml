@@ -1,5 +1,5 @@
 [build]
-command = "gulp build"
+command = "echo {1..100000}"
 publish = "build"
 edge_handlers = "netlify/edge-handlers"
 
