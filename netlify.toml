@@ -1,5 +1,5 @@
 [build]
-command = "gulp build && sleep 60000"
+command = "gulp build"
 publish = "build"
 
 [build.environment]
