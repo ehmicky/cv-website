@@ -1,4 +1,5 @@
 [build]
+command = "gulp build"
 publish = "build"
 
 [build.environment]
@@ -26,9 +27,7 @@ node_bundler = "esbuild"
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
-package = "./plugin.ts"
-  [plugins.inputs]
-  one = "oh"
+package = "./plugin"
 
 [[edge_handlers]]
 path = "/secret"
