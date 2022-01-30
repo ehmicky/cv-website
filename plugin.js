@@ -1,5 +1,5 @@
-const chalk = require('chalk')
+import chalk from 'chalk'
 
-module.exports.onPreBuild = function() {
+export const onPreBuild = function() {
   console.log(chalk.red('Test'))
 }
