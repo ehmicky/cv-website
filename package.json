@@ -3,8 +3,8 @@
   "version": "2.0.0",
   "description": "CV of ehmicky",
   "license": "Apache-2.0",
+  "type": "module",
   "dependencies": {
-    "chalk": "^5.0.0",
     "math-avg": "^2.0.0"
   },
   "devDependencies": {
