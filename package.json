@@ -2,7 +2,6 @@
   "name": "ehmicky-cv-website",
   "version": "2.0.0",
   "description": "CV of ehmicky",
-  "type": "module",
   "license": "Apache-2.0",
   "dependencies": {
     "chalk": "^5.0.0",
