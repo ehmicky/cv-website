@@ -24,6 +24,9 @@ compress = true
 node_bundler = "esbuild"
 
 [[plugins]]
+package = "@algolia/netlify-plugin-crawler"
+
+[[plugins]]
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
