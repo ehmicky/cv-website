@@ -1,5 +1,4 @@
-/blue
-  TEST_0: test_0
+/one
   TEST_1: test_1
   TEST_2: test_2
   TEST_3: test_3
@@ -75,3 +74,79 @@
   TEST_73: test_73
   TEST_74: test_74
   TEST_75: test_75
+
+/two
+  TEST_1: test_1
+  TEST_2: test_2
+  TEST_3: test_3
+  TEST_4: test_4
+  TEST_5: test_5
+  TEST_6: test_6
+  TEST_7: test_7
+  TEST_8: test_8
+  TEST_9: test_9
+  TEST_10: test_10
+  TEST_11: test_11
+  TEST_12: test_12
+  TEST_13: test_13
+  TEST_14: test_14
+  TEST_15: test_15
+  TEST_16: test_16
+  TEST_17: test_17
+  TEST_18: test_18
+  TEST_19: test_19
+  TEST_20: test_20
+  TEST_21: test_21
+  TEST_22: test_22
+  TEST_23: test_23
+  TEST_24: test_24
+  TEST_25: test_25
+  TEST_26: test_26
+  TEST_27: test_27
+  TEST_28: test_28
+  TEST_29: test_29
+  TEST_30: test_30
+  TEST_31: test_31
+  TEST_32: test_32
+  TEST_33: test_33
+  TEST_34: test_34
+  TEST_35: test_35
+  TEST_36: test_36
+  TEST_37: test_37
+  TEST_38: test_38
+  TEST_39: test_39
+  TEST_40: test_40
+  TEST_41: test_41
+  TEST_42: test_42
+  TEST_43: test_43
+  TEST_44: test_44
+  TEST_45: test_45
+  TEST_46: test_46
+  TEST_47: test_47
+  TEST_48: test_48
+  TEST_49: test_49
+  TEST_50: test_50
+  TEST_51: test_51
+  TEST_52: test_52
+  TEST_53: test_53
+  TEST_54: test_54
+  TEST_55: test_55
+  TEST_56: test_56
+  TEST_57: test_57
+  TEST_58: test_58
+  TEST_59: test_59
+  TEST_60: test_60
+  TEST_61: test_61
+  TEST_62: test_62
+  TEST_63: test_63
+  TEST_64: test_64
+  TEST_65: test_65
+  TEST_66: test_66
+  TEST_67: test_67
+  TEST_68: test_68
+  TEST_69: test_69
+  TEST_70: test_70
+  TEST_71: test_71
+  TEST_72: test_72
+  TEST_73: test_73
+  TEST_74: test_74
