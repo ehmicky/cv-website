@@ -5,6 +5,9 @@ export const onPreBuild = function({
   netlifyConfig,
 }) {
   show({ summary: 'Test' })
-  netlifyConfig.redirects.push({ from: '/one', to: '/two' })
+  let i = 150
+  while (i--) {
+    netlifyConfig.redirects.push({ from: `/one-${i}`, to: `/two-${i}` })
+  }
   netlifyConfig.headers.push({ for: '/couleur', values: { BLUE: 'bleu' } })
 }
