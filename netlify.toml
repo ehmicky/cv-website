@@ -36,6 +36,7 @@ handler = "secret"
 [[redirects]]
 from = "/here"
 to = "/there"
+status = "200"
 force = false
   [redirects.conditions]
   Country = ["it"]
