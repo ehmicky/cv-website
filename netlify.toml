@@ -24,7 +24,14 @@ compress = true
 node_bundler = "esbuild"
 
 [[plugins]]
-package = "@netlify/plugin-sitemap"
+package = "netlify-plugin-cypress"
+  [plugins.inputs]
+  record = true
+
+[[context.production.plugins]]
+package = "netlify-plugin-cypress"
+  [context.production.plugins.inputs]
+  record = false
 
 [[plugins]]
 package = "./plugin"
