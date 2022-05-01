@@ -1,4 +1,5 @@
-import del from 'del'
+import { rm } from 'fs/promises'
+
 import gulp from 'gulp'
 import gulpUglify from 'gulp-uglify'
 
@@ -12,9 +13,7 @@ const OTHER_FILES = [
 ]
 
 const clean = async function () {
-  // TODO: replace with `fs.promises.rm(..., {recursive: true})` after
-  // dropping support for Node <14
-  await del(BUILD_DIR)
+  await rm(BUILD_DIR, { force: true, recursive: true })
 }
 
 const uglify = function () {
