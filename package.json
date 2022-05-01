@@ -6,7 +6,7 @@
   "type": "module",
   "dependencies": {},
   "devDependencies": {
-    "@ehmicky/dev-tasks": "^1.0.70",
+    "@ehmicky/dev-tasks": "^1.0.71",
     "del": "^6.0.0",
     "gulp-uglify": "^3.0.2"
   }
