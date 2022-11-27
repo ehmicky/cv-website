@@ -10,5 +10,4 @@ node_modules
 !.github/
 /coverage
 /build
-/spyd
 .netlify
