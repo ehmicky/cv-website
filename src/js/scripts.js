@@ -101,7 +101,8 @@
   setTimeout(() => {
     document.querySelectorAll('iframe.embedly-card').forEach((node) => {
       const style = document.createElement('style')
-      style.textContent = '.card .brd, .card .hdr { display: none }'
+      style.textContent =
+        '.card .brd, .card .hdr, .card .action { display: none }'
       node.contentDocument.body.append(style)
     })
   }, 1e3)
