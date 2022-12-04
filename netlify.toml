@@ -3,7 +3,7 @@ command = "gulp build"
 publish = "build"
 
 [build.environment]
-NODE_VERSION = "18"
+NODE_VERSION = "19"
 
 [build.processing.css]
 bundle = true
