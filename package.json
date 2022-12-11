@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "type": "module",
   "devDependencies": {
-    "@ehmicky/dev-tasks": "^2.0.54",
+    "@ehmicky/dev-tasks": "^2.0.55",
     "gulp-uglify": "^3.0.2"
   }
 }
