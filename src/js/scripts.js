@@ -96,4 +96,14 @@
       $('#more-projects').fadeIn(300)
     })
   })
+
+  // Quick ugly hack to remove `Powered by embedly`
+  setTimeout(() => {
+    document.querySelectorAll('iframe.embedly-card').forEach((node) => {
+      const style = document.createElement('style')
+      style.textContent =
+        '.card .brd, .card .hdr, .card .action { display: none }'
+      node.contentDocument.body.append(style)
+    })
+  }, 1e3)
 })(jQuery)
