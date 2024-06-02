@@ -1,8 +1,9 @@
 import { rm } from 'node:fs/promises'
 
-import { links } from '@ehmicky/dev-tasks'
 import gulp from 'gulp'
 import gulpUglify from 'gulp-uglify'
+
+export * from '@ehmicky/dev-tasks'
 
 const SRC_DIR = 'src'
 const BUILD_DIR = 'build'
@@ -20,6 +21,6 @@ const uglify = () =>
 
 const move = () => gulp.src(OTHER_FILES).pipe(gulp.dest(BUILD_DIR))
 
-export const build = gulp.series(clean, move, uglify, links)
+export const buildSite = gulp.series(clean, move, uglify)
 
-export const watch = () => gulp.watch(`${SRC_DIR}/**`, build)
+export const watch = () => gulp.watch(`${SRC_DIR}/**`, buildSite)
