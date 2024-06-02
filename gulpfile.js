@@ -20,6 +20,6 @@ const uglify = () =>
 
 const move = () => gulp.src(OTHER_FILES).pipe(gulp.dest(BUILD_DIR))
 
-export const buildSite = gulp.series(clean, move, uglify, links)
+export const build = gulp.series(clean, move, uglify, links)
 
-export const watch = () => gulp.watch(`${SRC_DIR}/**`, buildSite)
+export const watch = () => gulp.watch(`${SRC_DIR}/**`, build)
