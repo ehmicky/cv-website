@@ -3,7 +3,7 @@ import { rm } from 'node:fs/promises'
 import gulp from 'gulp'
 import gulpUglify from 'gulp-uglify'
 
-export * from '@ehmicky/dev-tasks'
+export { links } from '@ehmicky/dev-tasks'
 
 const SRC_DIR = 'src'
 const BUILD_DIR = 'build'
