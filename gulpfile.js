@@ -19,7 +19,8 @@ const clean = () => rm(BUILD_DIR, { force: true, recursive: true })
 const uglify = () =>
   gulp.src(JS_FILES).pipe(gulpUglify()).pipe(gulp.dest(BUILD_DIR))
 
-const move = () => gulp.src(OTHER_FILES).pipe(gulp.dest(BUILD_DIR))
+const move = () =>
+  gulp.src(OTHER_FILES, { encoding: false }).pipe(gulp.dest(BUILD_DIR))
 
 export const buildSite = gulp.series(clean, move, uglify)
 
