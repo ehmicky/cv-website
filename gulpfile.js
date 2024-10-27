@@ -1,4 +1,5 @@
 import { rm } from 'node:fs/promises'
+import { pipeline } from 'node:stream/promises'
 
 import gulp from 'gulp'
 import gulpUglify from 'gulp-uglify'
@@ -17,10 +18,10 @@ const OTHER_FILES = [
 const clean = () => rm(BUILD_DIR, { force: true, recursive: true })
 
 const uglify = () =>
-  gulp.src(JS_FILES).pipe(gulpUglify()).pipe(gulp.dest(BUILD_DIR))
+  pipeline(gulp.src(JS_FILES), gulpUglify(), gulp.dest(BUILD_DIR))
 
 const move = () =>
-  gulp.src(OTHER_FILES, { encoding: false }).pipe(gulp.dest(BUILD_DIR))
+  pipeline(gulp.src(OTHER_FILES, { encoding: false }), gulp.dest(BUILD_DIR))
 
 export const buildSite = gulp.series(clean, move, uglify)
 
