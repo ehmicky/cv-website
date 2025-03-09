@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "type": "module",
   "devDependencies": {
-    "@ehmicky/dev-tasks": "^3.0.30",
+    "@ehmicky/dev-tasks": "^3.0.31",
     "@ehmicky/eslint-config": "^20.0.25",
     "@ehmicky/prettier-config": "^1.0.4",
     "gulp-uglify": "^3.0.2"
