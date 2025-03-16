@@ -6,7 +6,7 @@
   "type": "module",
   "devDependencies": {
     "@ehmicky/dev-tasks": "^3.0.33",
-    "@ehmicky/eslint-config": "^20.0.29",
+    "@ehmicky/eslint-config": "^20.0.30",
     "@ehmicky/prettier-config": "^1.0.5",
     "gulp-uglify": "^3.0.2"
   }
